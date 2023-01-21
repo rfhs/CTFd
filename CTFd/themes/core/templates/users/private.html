@@ -66,6 +66,16 @@
 					</a>
 				{% endif %}
 			</div>
+			<div class="vmstuff">
+			    <form  action="/vm/vm.php" method="post" id="ctfform"><input type="hidden" id="uid" name="uid" value={{ user.id }} />
+				<button type="submit" target="_blank" form="ctfform" name="action" value="startvm" formaction="/vm">Start my VM</button>
+				<button type="submit" target="_blank" form="ctfform" name="action" value="restartvm" formaction="/vm">Restart my VM</button>
+				<button type="submit" target="_blank" form="ctfform" name="action" value="stopvm" formaction="/vm">Stop my VM</button>
+				</form>
+			</div>
+			<div class="iceman">
+				<a href="https://discord.gg/rfid-hacking-by-iceman-738045391416852520">Download the Flipper Zero firmware (Iceman version) here</a>
+			</div>
 		</div>
 	</div>
 	<div class="container">
